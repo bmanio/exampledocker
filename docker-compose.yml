@@ -1,0 +1,10 @@
+version: '3'
+services:
+  exampledocker:
+    image: bhgraham/exampledocker:latest
+    build: ./
+    container_name: exampledocker
+    ports:
+     - "9000:9000"
+    volumes:
+     - /exampledocker/node_modules
